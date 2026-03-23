@@ -331,6 +331,7 @@ ul {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .social-links {
@@ -373,6 +374,14 @@ ul {
     z-index: 2;
     animation: morph 8s ease-in-out infinite;
     box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    pointer-events: none;
 }
 
 @keyframes morph {
@@ -510,6 +519,17 @@ ul {
     font-family: var(--font-display);
     color: var(--accent-color);
     font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
 }
 
 /* Education & More section */
